@@ -15,6 +15,9 @@
 		8C134BE4258A325B0046CA5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C134BE2258A325B0046CA5D /* LaunchScreen.storyboard */; };
 		8C134BEF258A325B0046CA5D /* MedicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BEE258A325B0046CA5D /* MedicTests.swift */; };
 		8C134BFA258A325C0046CA5D /* MedicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BF9258A325C0046CA5D /* MedicUITests.swift */; };
+		8C93D06E258CBB0E004A5298 /* ВходViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D06D258CBB0E004A5298 /* ВходViewController.swift */; };
+		8C93D073258CBB33004A5298 /* РегистрацияViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D072258CBB33004A5298 /* РегистрацияViewController.swift */; };
+		8C93D080258CCB17004A5298 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D07F258CCB17004A5298 /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		8C134BF5258A325B0046CA5D /* MedicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C134BF9258A325C0046CA5D /* MedicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicUITests.swift; sourceTree = "<group>"; };
 		8C134BFB258A325C0046CA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C93D06D258CBB0E004A5298 /* ВходViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ВходViewController.swift"; sourceTree = "<group>"; };
+		8C93D072258CBB33004A5298 /* РегистрацияViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "РегистрацияViewController.swift"; sourceTree = "<group>"; };
+		8C93D07F258CCB17004A5298 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				8C134BE0258A325B0046CA5D /* Assets.xcassets */,
 				8C134BE2258A325B0046CA5D /* LaunchScreen.storyboard */,
 				8C134BE5258A325B0046CA5D /* Info.plist */,
+				8C93D06D258CBB0E004A5298 /* ВходViewController.swift */,
+				8C93D072258CBB33004A5298 /* РегистрацияViewController.swift */,
+				8C93D07F258CCB17004A5298 /* CityViewController.swift */,
 			);
 			path = Medic;
 			sourceTree = "<group>";
@@ -261,6 +270,9 @@
 				8C134BDC258A32460046CA5D /* ViewController.swift in Sources */,
 				8C134BD8258A32460046CA5D /* AppDelegate.swift in Sources */,
 				8C134BDA258A32460046CA5D /* SceneDelegate.swift in Sources */,
+				8C93D06E258CBB0E004A5298 /* ВходViewController.swift in Sources */,
+				8C93D073258CBB33004A5298 /* РегистрацияViewController.swift in Sources */,
+				8C93D080258CCB17004A5298 /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +449,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39MS398TMA;
 				INFOPLIST_FILE = Medic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,6 +468,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 39MS398TMA;
 				INFOPLIST_FILE = Medic/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
