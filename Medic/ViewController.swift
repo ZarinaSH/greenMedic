@@ -11,7 +11,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.red
+        
+        
+        //red>white
         self.navigationItem.title = "Выберите город"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         //zxcvbnmertyuirtyui
