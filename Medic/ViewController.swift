@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         self.navigationItem.title = "Выберите город"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
+        //zxcvbnmertyuirtyui
     }
 
 
