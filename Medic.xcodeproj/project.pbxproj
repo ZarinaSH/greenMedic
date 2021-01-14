@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		80F6D3D82598BF1700FC334F /* SearchCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F6D3D72598BF1700FC334F /* SearchCityViewController.swift */; };
+		80F6D3E12598D3F100FC334F /* MedicalDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F6D3E02598D3F100FC334F /* MedicalDirectionsViewController.swift */; };
+		80F6D3E62598D4F900FC334F /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F6D3E52598D4F900FC334F /* File.swift */; };
 		8C134BD8258A32460046CA5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BD7258A32460046CA5D /* AppDelegate.swift */; };
 		8C134BDA258A32460046CA5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BD9258A32460046CA5D /* SceneDelegate.swift */; };
 		8C134BDC258A32460046CA5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BDB258A32460046CA5D /* ViewController.swift */; };
@@ -15,8 +18,8 @@
 		8C134BE4258A325B0046CA5D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8C134BE2258A325B0046CA5D /* LaunchScreen.storyboard */; };
 		8C134BEF258A325B0046CA5D /* MedicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BEE258A325B0046CA5D /* MedicTests.swift */; };
 		8C134BFA258A325C0046CA5D /* MedicUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BF9258A325C0046CA5D /* MedicUITests.swift */; };
-		8C93D06E258CBB0E004A5298 /* ВходViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D06D258CBB0E004A5298 /* ВходViewController.swift */; };
-		8C93D073258CBB33004A5298 /* РегистрацияViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D072258CBB33004A5298 /* РегистрацияViewController.swift */; };
+		8C93D06E258CBB0E004A5298 /* SiqnInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D06D258CBB0E004A5298 /* SiqnInViewController.swift */; };
+		8C93D073258CBB33004A5298 /* SiqnUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D072258CBB33004A5298 /* SiqnUpViewController.swift */; };
 		8C93D080258CCB17004A5298 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C93D07F258CCB17004A5298 /* CityViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		80F6D3D72598BF1700FC334F /* SearchCityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCityViewController.swift; sourceTree = "<group>"; };
+		80F6D3E02598D3F100FC334F /* MedicalDirectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirectionsViewController.swift; sourceTree = "<group>"; };
+		80F6D3E52598D4F900FC334F /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		8C134BD4258A32460046CA5D /* Medic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C134BD7258A32460046CA5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C134BD9258A32460046CA5D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,8 +58,8 @@
 		8C134BF5258A325B0046CA5D /* MedicUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MedicUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C134BF9258A325C0046CA5D /* MedicUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicUITests.swift; sourceTree = "<group>"; };
 		8C134BFB258A325C0046CA5D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8C93D06D258CBB0E004A5298 /* ВходViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ВходViewController.swift"; sourceTree = "<group>"; };
-		8C93D072258CBB33004A5298 /* РегистрацияViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "РегистрацияViewController.swift"; sourceTree = "<group>"; };
+		8C93D06D258CBB0E004A5298 /* SiqnInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiqnInViewController.swift; sourceTree = "<group>"; };
+		8C93D072258CBB33004A5298 /* SiqnUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiqnUpViewController.swift; sourceTree = "<group>"; };
 		8C93D07F258CCB17004A5298 /* CityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -110,11 +116,14 @@
 				8C134BDB258A32460046CA5D /* ViewController.swift */,
 				8C134BDD258A32470046CA5D /* Main.storyboard */,
 				8C134BE0258A325B0046CA5D /* Assets.xcassets */,
+				8C93D06D258CBB0E004A5298 /* SiqnInViewController.swift */,
+				80F6D3D72598BF1700FC334F /* SearchCityViewController.swift */,
+				8C93D072258CBB33004A5298 /* SiqnUpViewController.swift */,
+				8C93D07F258CCB17004A5298 /* CityViewController.swift */,
+				80F6D3E02598D3F100FC334F /* MedicalDirectionsViewController.swift */,
+				80F6D3E52598D4F900FC334F /* File.swift */,
 				8C134BE2258A325B0046CA5D /* LaunchScreen.storyboard */,
 				8C134BE5258A325B0046CA5D /* Info.plist */,
-				8C93D06D258CBB0E004A5298 /* ВходViewController.swift */,
-				8C93D072258CBB33004A5298 /* РегистрацияViewController.swift */,
-				8C93D07F258CCB17004A5298 /* CityViewController.swift */,
 			);
 			path = Medic;
 			sourceTree = "<group>";
@@ -269,9 +278,12 @@
 			files = (
 				8C134BDC258A32460046CA5D /* ViewController.swift in Sources */,
 				8C134BD8258A32460046CA5D /* AppDelegate.swift in Sources */,
+				80F6D3E12598D3F100FC334F /* MedicalDirectionsViewController.swift in Sources */,
 				8C134BDA258A32460046CA5D /* SceneDelegate.swift in Sources */,
-				8C93D06E258CBB0E004A5298 /* ВходViewController.swift in Sources */,
-				8C93D073258CBB33004A5298 /* РегистрацияViewController.swift in Sources */,
+				8C93D06E258CBB0E004A5298 /* SiqnInViewController.swift in Sources */,
+				8C93D073258CBB33004A5298 /* SiqnUpViewController.swift in Sources */,
+				80F6D3D82598BF1700FC334F /* SearchCityViewController.swift in Sources */,
+				80F6D3E62598D4F900FC334F /* File.swift in Sources */,
 				8C93D080258CCB17004A5298 /* CityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,12 +7,11 @@
 
 import UIKit
 
-class ____ViewController: UIViewController {
+class SiqnInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 

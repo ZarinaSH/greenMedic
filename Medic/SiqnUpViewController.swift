@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ___________ViewController: UIViewController {
+class SiqnUpViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +22,7 @@ class ___________ViewController: UIViewController {
     @IBAction func goToEnter(_ sender: UIButton) {
       navigationController?.popToRootViewController(animated: true)
     }
-//
+
     
     
 }
