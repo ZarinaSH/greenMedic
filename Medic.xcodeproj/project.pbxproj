@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		802EA97325B2250E00FB6FBB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 802EA97225B2250E00FB6FBB /* ProfileViewController.swift */; };
 		80F6D3E12598D3F100FC334F /* MedicalDirectionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F6D3E02598D3F100FC334F /* MedicalDirectionsViewController.swift */; };
 		8C134BD8258A32460046CA5D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BD7258A32460046CA5D /* AppDelegate.swift */; };
 		8C134BDA258A32460046CA5D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C134BD9258A32460046CA5D /* SceneDelegate.swift */; };
@@ -42,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		802EA97225B2250E00FB6FBB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		80F6D3E02598D3F100FC334F /* MedicalDirectionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalDirectionsViewController.swift; sourceTree = "<group>"; };
 		8C134BD4258A32460046CA5D /* Medic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Medic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C134BD7258A32460046CA5D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +115,7 @@
 		8C134BD6258A32460046CA5D /* Medic */ = {
 			isa = PBXGroup;
 			children = (
-				8C23C0F125B213120061DCC0 /* Мед.направления */,
+				8C23C0F125B213120061DCC0 /* запись */,
 				8C23C0F025B2130A0061DCC0 /* Акции */,
 				8C23C0EF25B213000061DCC0 /* История */,
 				8C23C0EE25B212BF0061DCC0 /* Выбор города */,
@@ -189,12 +191,13 @@
 			path = "Акции";
 			sourceTree = "<group>";
 		};
-		8C23C0F125B213120061DCC0 /* Мед.направления */ = {
+		8C23C0F125B213120061DCC0 /* запись */ = {
 			isa = PBXGroup;
 			children = (
 				80F6D3E02598D3F100FC334F /* MedicalDirectionsViewController.swift */,
+				802EA97225B2250E00FB6FBB /* ProfileViewController.swift */,
 			);
-			path = "Мед.направления";
+			path = "запись";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,6 +336,7 @@
 				8C23C0FF25B215FA0061DCC0 /* City.swift in Sources */,
 				80F6D3E12598D3F100FC334F /* MedicalDirectionsViewController.swift in Sources */,
 				8C134BDA258A32460046CA5D /* SceneDelegate.swift in Sources */,
+				802EA97325B2250E00FB6FBB /* ProfileViewController.swift in Sources */,
 				8C93D06E258CBB0E004A5298 /* SiqnInViewController.swift in Sources */,
 				8C93D073258CBB33004A5298 /* SiqnUpViewController.swift in Sources */,
 				8C23C0F925B215B50061DCC0 /* CityTableViewCell.swift in Sources */,

@@ -16,12 +16,13 @@ class MedicalDirectionsViewController: UIViewController{
     
    
     @IBOutlet weak var uslugi: UITableView!
+    
     var texxt:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testCity.text = "Ваш город - " + texxt!
+        //testCity.text = "Ваш город - " + texxt!
         
         med.append("МРТ")
         med.append("РКТ")

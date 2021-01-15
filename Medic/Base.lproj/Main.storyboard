@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="scj-OY-c7E">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sw5-08-ELZ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-886" y="-768"/>
+            <point key="canvasLocation" x="843" y="-1580"/>
         </scene>
         <!--О нас-->
         <scene sceneID="abJ-4n-Co0">
@@ -178,7 +178,57 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6OU-lz-EOF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4623" y="-651"/>
+            <point key="canvasLocation" x="4341" y="-865"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Q1V-pT-ncx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z6e-dj-7VS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tabBarController id="sw5-08-ELZ" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UgC-kO-8UB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="0.42790025469999998" green="0.57100504640000005" blue="0.26204931739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" red="0.42790025469999998" green="0.57100504640000005" blue="0.26204931739999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="hsG-rS-8YT" kind="relationship" relationship="viewControllers" id="3Av-kP-mJv"/>
+                        <segue destination="mRq-OG-50S" kind="relationship" relationship="viewControllers" id="7jU-F9-Qdn"/>
+                        <segue destination="rrR-XM-9GT" kind="relationship" relationship="viewControllers" id="eAP-CA-m1w"/>
+                        <segue destination="B5E-J4-Oa0" kind="relationship" relationship="viewControllers" id="4Sh-6e-JYU"/>
+                    </connections>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="2904" y="-1580"/>
+        </scene>
+        <!-- запись-->
+        <scene sceneID="w92-li-Buo">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="hsG-rS-8YT" customClass="ProfileViewController" customModule="Medic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RIs-qg-FrO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="se8-Kx-Hgq">
+                                <rect key="frame" x="120" y="691" width="175" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="zapis:" destination="hsG-rS-8YT" eventType="touchUpInside" id="W7a-Dg-P5h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FEm-95-YbQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title=" запись" image="person" catalog="system" selectedImage="person" id="75n-oq-qCR"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hYs-Ya-EfH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2028.985507246377" y="-869.19642857142856"/>
         </scene>
         <!--Акции-->
         <scene sceneID="IRy-1B-Um3">
@@ -213,11 +263,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iAe-iY-yIi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2839" y="-651"/>
+            <point key="canvasLocation" x="2820" y="-865"/>
         </scene>
         <!--История-->
         <scene sceneID="q87-Mv-xaW">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6X4-Zo-0aY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="mRq-OG-50S" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CtX-lb-UZr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -245,9 +296,8 @@
                         <color key="badgeColor" red="0.59619349610000005" green="0.83808677600000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6X4-Zo-0aY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3726" y="-651"/>
+            <point key="canvasLocation" x="3581" y="-865"/>
         </scene>
         <!--Title-->
         <scene sceneID="nwM-t5-mIB">
@@ -288,6 +338,7 @@
                             <constraint firstItem="YA0-Wp-guc" firstAttribute="trailing" secondItem="M0Z-zT-a9d" secondAttribute="trailing" id="kr4-I9-ONz"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="ijo-sq-h5u"/>
                     <navigationItem key="navigationItem" title="Title" id="z5Z-Zg-R41"/>
                     <connections>
                         <outlet property="testCity" destination="4Gp-Uk-xxE" id="Omg-VA-brk"/>
@@ -296,7 +347,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrh-sL-IdA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1583" y="-738"/>
+            <point key="canvasLocation" x="2029" y="-192"/>
         </scene>
         <!--Siqn In View Controller-->
         <scene sceneID="PyF-e5-KWD">
@@ -401,7 +452,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjT-AQ-NDA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1670" y="-768"/>
+            <point key="canvasLocation" x="59" y="-1580"/>
         </scene>
         <!--запись-->
         <scene sceneID="zXk-gw-vig">
@@ -504,7 +555,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ey6-ye-fUv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-133.33333333333334" y="-768.08035714285711"/>
+            <point key="canvasLocation" x="1597" y="-1580"/>
         </scene>
     </scenes>
     <resources>
@@ -512,6 +563,7 @@
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
         <image name="logo" width="420" height="74"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="person" catalog="system" width="128" height="117"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

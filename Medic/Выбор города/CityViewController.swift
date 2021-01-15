@@ -48,6 +48,21 @@ extension CityViewController : UITableViewDataSource,UITableViewDelegate{
     }
 
     
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        if let newVC = storyboard?.instantiateViewController(withIdentifier: "MedicalDirectionsViewController") as? MedicalDirectionsViewController {
+//            newVC.modalTransitionStyle = .crossDissolve // это значение можно менять для разных видов анимации появления
+//            newVC.modalPresentationStyle = .fullScreen
+//            //newVC.modalPresentationStyle = .overCurrentContext
+//            // это та самая волшебная строка, убрав или закомментировав ее, вы получите появление смахиваемого контроллера
+//
+//            let buff =  model.cityes[indexPath.item].city
+//
+//
+//            newVC.texxt = buff
+//
+//            present(newVC, animated: false, completion: nil)
+//           }
+//    }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let newVC = storyboard?.instantiateViewController(withIdentifier: "MedicalDirectionsViewController") as? MedicalDirectionsViewController {
             newVC.modalTransitionStyle = .crossDissolve // это значение можно менять для разных видов анимации появления
@@ -56,11 +71,13 @@ extension CityViewController : UITableViewDataSource,UITableViewDelegate{
             // это та самая волшебная строка, убрав или закомментировав ее, вы получите появление смахиваемого контроллера
             
             let buff =  model.cityes[indexPath.item].city
-//            let buff =  model.cityes.[ indexPath.item]
-            
+
             newVC.texxt = buff
             
+            
+            
             present(newVC, animated: false, completion: nil)
+            
            }
     }
    
