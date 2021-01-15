@@ -14,30 +14,14 @@ class CityViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    let cellID = "cellID"
+    var model = ModelCity()
+    let cellID = "CityTableViewCell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.modalPresentationStyle = .fullScreen
-        
-        citys.append("Казань")
-        citys.append("Набережные Челны")
-        citys.append("Йошкар Ола")
-        citys.append("Альметьевск")
-        citys.append("Елабуга")
-        citys.append("Буинск")
-        citys.append("Арск")
-        citys.append("Зеленодольск")
-        citys.append("Лаишево")
-        citys.append("Чистополь")
-        citys.append("Мамадыш")
-        citys.append("Заинск")
-
         tableView.delegate = self
         tableView.dataSource = self
-        
-        
+
 
     }
     
@@ -47,21 +31,20 @@ class CityViewController: UIViewController {
 extension CityViewController : UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return citys.count
+        return model.cityes.count
         
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: cellID)
-        if cell==nil{
-            cell = UITableViewCell(style: .default, reuseIdentifier: cellID)
-        }
         
-      cell?.textLabel?.text = citys[indexPath.item]
-       
-      cell?.imageView?.image = UIImage(named: "mappin")
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellID) as! CityTableViewCell
         
-        return cell!
+        let city = model.cityes[indexPath.row]
+        cell.name_city.text = city.city
+        cell.mappin.image = city.mapPin
+        
+     
+        return cell
     }
 
     
@@ -72,7 +55,8 @@ extension CityViewController : UITableViewDataSource,UITableViewDelegate{
             //newVC.modalPresentationStyle = .overCurrentContext
             // это та самая волшебная строка, убрав или закомментировав ее, вы получите появление смахиваемого контроллера
             
-            let buff = citys[indexPath.item]
+            let buff =  model.cityes[indexPath.item].city
+//            let buff =  model.cityes.[ indexPath.item]
             
             newVC.texxt = buff
             
