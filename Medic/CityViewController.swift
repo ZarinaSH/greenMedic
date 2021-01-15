@@ -59,7 +59,7 @@ extension CityViewController : UITableViewDataSource,UITableViewDelegate{
         
       cell?.textLabel?.text = citys[indexPath.item]
        
-      cell?.imageView?.image = UIImage(named: "gps")
+      cell?.imageView?.image = UIImage(named: "mappin")
         
         return cell!
     }

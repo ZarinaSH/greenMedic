@@ -14,14 +14,28 @@ class SiqnUpViewController: UIViewController {
 
       
     }
-    @IBAction func goToCity(_ sender: UIButton) {
-        let newVC = storyboard?.instantiateViewController(withIdentifier: "CityViewController")
-        navigationController?.pushViewController(newVC!, animated : true)
+    
+
+
+    
+    @IBAction func toBack(_ sender: UIButton) {
+        let newVC = storyboard!.instantiateViewController(withIdentifier: "SiqnInViewController")
+            newVC.modalTransitionStyle = .crossDissolve // это значение можно менять для разных видов анимации появления
+            newVC.modalPresentationStyle = .fullScreen
+            //newVC.modalPresentationStyle = .overCurrentContext
+            // это та самая волшебная строка, убрав или закомментировав ее, вы получите появление смахиваемого контроллера
+        self.present(newVC, animated: true, completion: nil)
     }
     
-    @IBAction func goToEnter(_ sender: UIButton) {
-      navigationController?.popToRootViewController(animated: true)
+    @IBAction func toCity(_ sender: UIButton) {
+        let newVC = storyboard!.instantiateViewController(withIdentifier: "CityViewController")
+            newVC.modalTransitionStyle = .crossDissolve // это значение можно менять для разных видов анимации появления
+            newVC.modalPresentationStyle = .fullScreen
+            //newVC.modalPresentationStyle = .overCurrentContext
+            // это та самая волшебная строка, убрав или закомментировав ее, вы получите появление смахиваемого контроллера
+        self.present(newVC, animated: true, completion: nil)
     }
+  
 
     
     
