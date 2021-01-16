@@ -17,7 +17,6 @@ class ViewController: UIViewController {
         //red>white
         self.navigationItem.title = "Выберите город"
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        //zxcvbnmertyuirtyui
     }
 
 
